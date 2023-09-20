@@ -36,7 +36,7 @@ function displayUserData(datiImg) {
 function displayUserDataConBacktick(resultServer) {
     imgCont.innerHTML = resultServer.photos.map((img_find) => {
         return /*html*/`
-                <div class="col-4">
+                <div class="col-4 p-1">
                     <img src="${img_find.src.medium}" class="w-100 h-pred mt-1 object-fit-cover" alt="">
                 </div>`
     }).join("")
